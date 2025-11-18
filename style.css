@@ -1,0 +1,60 @@
+/* Global Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f2f6ff;
+    color: #222;
+}
+
+/* Header */
+header {
+    background: #0047ab;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Section Titles */
+h2 {
+    color: #0047ab;
+    border-left: 5px solid #0047ab;
+    padding-left: 10px;
+}
+
+/* Section Styling */
+section {
+    padding: 20px;
+    margin: 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+/* Table Styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+th, td {
+    padding: 12px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+th {
+    background: #0047ab;
+    color: white;
+}
+
+/* Skills List */
+ul {
+    list-style-type: square;
+    padding-left: 20px;
+}
+
+li {
+    margin: 8px 0;
+}

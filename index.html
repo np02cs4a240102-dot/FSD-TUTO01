@@ -8,13 +8,22 @@
 </head>
 
 <body>
+    <!-- Theme Toggle Button -->
+    <button id="themeToggle" class="theme-toggle">🌙 Dark Mode</button>
 
+    
     <!-- Hero Section -->
-    <section class="hero">
-        <h1 class="title">Hi, I'm <span>Samrat Jung Basnet</span></h1>
-        <p class="subtitle">Aspiring Programmer • Fast Learner • Creative Thinker</p>
-        <a href="#about" class="btn">Explore More</a>
-    </section>
+<section class="hero">
+    <div class="hero-content">
+        <img src="image/image.jpg" alt="Profile Photo" class="profile-photo">
+
+        <div class="hero-text">
+            <h1 class="title">Hi, I'm <span>Samrat Jung Basnet</span></h1>
+            <p class="subtitle">Aspiring Programmer • Fast Learner • Creative Thinker</p>
+            <a href="#about" class="btn">Explore More</a>
+        </div>
+    </div>
+</section>
 
     <!-- About Section -->
     <section class="container" id="about">
@@ -23,7 +32,7 @@
             I am Samrat Jung Basnet from Biratnagar-5. I completed my Higher Secondary Education 
             from Bal Kalyan Vidhya Mandir. I am currently pursuing my higher education at Birat 
             International College. I love programming, problem-solving, creativity, and learning 
-            new things every day.
+            new things Every day.
         </p>
     </section>
 
@@ -51,14 +60,150 @@
 
     <!-- Skills Section -->
     <section class="container">
-        <h2>Skills & Hobbies</h2>
-        <div class="skills-grid">
-            <div class="skill-card">Programming</div>
-            <div class="skill-card">Fast Learner</div>
-            <div class="skill-card">Leadership</div>
-            <div class="skill-card">Communication</div>
-            <div class="skill-card">Creativity</div>
-            <div class="skill-card">Critical Thinking</div>
+        <h2>Skills</h2>
+        <div class="skills-container">
+            <div class="skill-item">
+                <div class="skill-info">
+                    <span class="skill-name">HTML/CSS</span>
+                    <span class="skill-percent">90%</span>
+                </div>
+                <div class="skill-bar">
+                    <div class="skill-progress" data-width="90"></div>
+                </div>
+            </div>
+            <div class="skill-item">
+                <div class="skill-info">
+                    <span class="skill-name">JavaScript</span>
+                    <span class="skill-percent">80%</span>
+                </div>
+                <div class="skill-bar">
+                    <div class="skill-progress" data-width="80"></div>
+                </div>
+            </div>
+            <div class="skill-item">
+                <div class="skill-info">
+                    <span class="skill-name">Problem Solving</span>
+                    <span class="skill-percent">85%</span>
+                </div>
+                <div class="skill-bar">
+                    <div class="skill-progress" data-width="85"></div>
+                </div>
+            </div>
+            <div class="skill-item">
+                <div class="skill-info">
+                    <span class="skill-name">Communication</span>
+                    <span class="skill-percent">85%</span>
+                </div>
+                <div class="skill-bar">
+                    <div class="skill-progress" data-width="75"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="container">
+        <h2>Projects</h2>
+        <div class="projects-grid">
+            <div class="project-card" data-url="https://example-project1.com">
+                <h3>Portfolio Website</h3>
+                <p>A responsive personal portfolio website built with HTML, CSS, and JavaScript.</p>
+            </div>
+            <div class="project-card" data-url="https://example-project2.com">
+                <h3>Task Manager App</h3>
+                <p>A web application for managing daily tasks with local storage functionality.</p>
+            </div>
+            <div class="project-card" data-url="https://example-project3.com">
+                <h3>Weather Dashboard</h3>
+                <p>A weather application that displays current conditions and forecasts.</p>
+            </div>
+            <div class="project-card" data-url="https://example-project1.com">
+                <h3>Creating Game Project</h3>
+                <p>A responsive gaming experience with alots of controls and mode.</p>
+            </div>
+        </div>
+    </section>
+
+    <!--  Media Section -->
+<section class="container">
+    <h2>Media Gallery</h2>
+    <div class="media-container">
+        <div class="media-item">
+            <h3>Video Introduction</h3>
+            <!-- YouTube Embed -->
+            <div class="video-container">
+                <iframe 
+                    width="100%" 
+                    height="315" 
+                    src="https://www.youtube.com/embed/iESy3uj4sjE?list=RDiESy3uj4sjE" 
+                    title="YouTube video player" 
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen>
+                </iframe>
+            </div>
+        </div>
+        <div class="media-item">
+            <h3>Audio Message</h3>
+            <audio controls>
+                <source src="assets/welcome-message.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+        </div>
+        <div class="media-item">
+            <h3>Canvas Drawing</h3>
+            <canvas id="myCanvas" width="300" height="200"></canvas>
+        </div>
+    </div>
+</section>
+
+    <!-- Image Slider -->
+<section class="container">
+    <h2>Project Gallery</h2>
+    <div class="slider-container">
+        <div class="slider">
+            <div class="slides">
+                <div class="slide active">
+                    <img src="https://i.ytimg.com/vi/tLAI1Xtnbh8/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLBZaRcbdqCvxb1rEwvFt8fe4oqdGg" alt="How to drive a car Game Project" class="slide-image">
+                    <div class="slide-caption">Creating Game project</div>
+                </div>
+                <div class="slide">
+                    <img src="https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/9d4b93179374693.64f87fe05aa79.png" alt="Task Manager App" class="slide-image">
+                    <div class="slide-caption">Task Manager App</div>
+                </div>
+                <div class="slide">
+                    <img src="https://cdn.dribbble.com/userupload/11691189/file/original-9e15f16591234c1364843746eb514624.png?format=webp&resize=1440x&vertical=center" alt="Weather Dashboard" class="slide-image">
+                    <div class="slide-caption">Weather Dashboard</div>
+                </div>
+                <div class="slide">
+                    <img src="https://magesolution.com/wp-content/uploads/2022/07/ecommerce-website-design-examples-1024x768.jpg" alt="E-commerce Website" class="slide-image">
+                    <div class="slide-caption">E-commerce Website</div>
+                </div>
+            </div>
+        </div>
+        <button class="slider-btn prev-btn">&#10094;</button>
+        <button class="slider-btn next-btn">&#10095;</button>
+        <div class="slider-dots">
+            <span class="dot active"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+        </div>
+    </div>
+</section>
+
+    <!-- Layout Comparison Section -->
+    <section class="container">
+        <h2>Layout Comparison</h2>
+        <div class="layout-comparison">
+            <div class="layout-item">
+                <h3>Flexbox</h3>
+                <p>Flexbox is a one-dimensional layout method for arranging items in rows or columns. It's ideal for component-level layouts.</p>
+            </div>
+            <div class="layout-item">
+                <h3>CSS Grid</h3>
+                <p>CSS Grid is a two-dimensional layout system that can handle both rows and columns. It's perfect for page-level layouts.</p>
+            </div>
         </div>
     </section>
 
@@ -68,12 +213,39 @@
         <p>If you want to reach out, feel free to contact me:</p>
 
         <div class="contact-box">
-            <p><strong>Email:</strong> samratportfolio123@gmail.com</p>
+            <p><strong>Email:</strong> samratbasnet88@gmail.com</p>
             <p><strong>Location:</strong> Biratnagar, Nepal</p>
         </div>
 
-        <a class="998008532" href="mailto:samratportfolio123@gmail.com">Send Message</a>
+        <form id="contactForm">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <span class="error-message" id="nameError"></span>
+            </div>
+            
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <span class="error-message" id="emailError"></span>
+            </div>
+            
+            <div class="form-group">
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+                <span class="error-message" id="messageError"></span>
+            </div>
+            
+            <button type="submit" class="contact-btn">Send Message</button>
+        </form>
+        
+        <div id="formMessage" class="form-message"></div>
     </section>
 
+    <!-- Back to Top Button -->
+    <button id="backToTop" class="back-to-top">↑</button>
+
+    
 </body>
+<script src="Main.js"></script>
 </html>
